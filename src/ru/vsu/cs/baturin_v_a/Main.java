@@ -23,7 +23,7 @@ public class Main {
             }
     }
 
-    private static boolean testX(double x){
+    private static boolean testX(double x) {
         boolean m = !(x <= -1) && !(x >= 1);
         return m;
     }
@@ -38,7 +38,7 @@ public class Main {
         return sc.nextInt();
     }
 
-    private static double returnABS(double k){
+    private static double returnABS(double k) {
         if (k >= 0){
             return k;
         } else {
@@ -46,18 +46,18 @@ public class Main {
         }
     }
 
-    private static double calcSum1(int n, double x){
+    private static double calcSum1(int n, double x) {
         double sum = 1;
         double tmp = 1;
 
-        for (int i = 1; i < n; i++){
+        for (int i = 1; i < n; i++) {
             tmp *= - (3 * x);
             sum += tmp;
         }
         return sum;
     }
 
-    private static double calcSum2And3(int n, double x, double e){
+    private static double calcSum2And3(int n, double x, double e) {
         double sum = 0;
         double tmp = 1;
 
@@ -68,14 +68,14 @@ public class Main {
         for (int i = 1; i < n; i++) {
             tmp *= -(3 * x);
 
-            if (returnABS(tmp) > e){
+            if (returnABS(tmp) > e) {
                 sum += tmp;
             }
         }
         return sum;
     }
 
-    private static double calcSum4(double x){
+    private static double calcSum4(double x) {
         return 1 / (1 + 3 * x);
     }
 }
