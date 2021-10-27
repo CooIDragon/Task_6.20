@@ -1,6 +1,8 @@
 package ru.vsu.cs.baturin_v_a;
+
 import java.util.Locale;
 import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -9,7 +11,7 @@ public class Main {
         System.out.print("Введите x = ");
         double x = readDouble();
 
-        if (testX(x)){
+        if (testX(x)) {
             System.out.print("Введите n = ");
             int n = readInt();
 
@@ -39,7 +41,7 @@ public class Main {
     }
 
     private static double returnABS(double k) {
-        if (k >= 0){
+        if (k >= 0) {
             return k;
         } else {
             return -k;
