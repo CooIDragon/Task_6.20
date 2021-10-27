@@ -24,8 +24,7 @@ public class Main {
     }
 
     private static boolean testX(double x){
-        boolean m;
-        m = !(x <= -1) && !(x >= 1);
+        boolean m = !(x <= -1) && !(x >= 1);
         return m;
     }
 
